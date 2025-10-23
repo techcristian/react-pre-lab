@@ -1,0 +1,79 @@
+nav {
+  background-color: #0d1b2a;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav li {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+nav li:hover {
+  transform: translateY(-3px);
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #1b263b;
+  color: #00b4d8;
+}
+
+/* Burbuja del carrito */
+nav li span {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #e63946;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  nav li {
+    position: static;
+  }
+
+  nav li span {
+    position: static;
+    margin-left: 0.4rem;
+    background-color: #e63946;
+    border-radius: 0.4rem;
+  }
+}
+

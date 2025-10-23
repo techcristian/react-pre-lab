@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Casio Original",
+    "price": 100000,
+    "description": "Reloj clásico Casio con diseño elegante y resistente al agua, ideal para uso diario.",
+    "category": "analógico",
+    "imageUrl": "/images/casio-original.webp"
+  },
+  {
+    "id": "2",
+    "name": "Casio Deportivo",
+    "price": 150000,
+    "description": "Reloj deportivo Casio con cronómetro, resistencia al agua de 100m y correa de goma duradera.",
+    "category": "deportivo",
+    "imageUrl": "/images/casio-deportivo.webp"
+  },
+  {
+    "id": "3",
+    "name": "Casio Digital",
+    "price": 200000,
+    "description": "Reloj digital Casio con alarma, calendario automático y luz LED, ideal para el uso diario.",
+    "category": "digital",
+    "imageUrl": "/images/casio-digital.webp"
+  }
+]
