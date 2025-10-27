@@ -42,13 +42,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #270b73;
+  background-color: #052d07;
+  color: #fdfdfd;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-   background-color: #775fba;
-   color:#070707;
+   background-color: #13f131;
+  color: #052d07;
   
 }
 button:focus,
