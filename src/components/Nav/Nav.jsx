@@ -8,9 +8,9 @@ export const Nav = () => {
     <nav>
     <ul>
       <li><Link to={"/"}>  Home</Link> </li>
-      <li><Link to={"/categoy/analogico"}>  Analogico</Link> </li>
-      <li><Link to={"/categoy/deportivo"}>  Deportivo</Link> </li>
-      <li><Link to={"/categoy/digital"}>  Digital</Link> </li>
+      <li><Link to={"/category/analogico"}>  Analogico</Link> </li>
+      <li><Link to={"/category/deportivo"}>  Deportivo</Link> </li>
+      <li><Link to={"/category/digital"}>  Digital</Link> </li>
       <li><Link to={"/carrito"}>  Carrito </Link> 
       {
         getTotalItems() > 0 && (

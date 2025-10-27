@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { ItemList } from "../ItemList/ItemList";
+import './ItemListContainer.css';
 
 export const ItemListContainer = () =>{
   const [products, setProducts] = useState([]);
@@ -19,7 +20,7 @@ fetch("/data/products.json")
 })
   },[]);
   return (
-    <section>
+    <section className="item-list-container">
      <ItemList list={products}/>
     </section>
   )

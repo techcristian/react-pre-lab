@@ -5,6 +5,7 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer"
 import './App.css'
 import { CartProvider } from "./context/CartContex/CartProvider"
+import { Footer } from "./components/Footer/Footer"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path={"/"} element={<ItemListContainer />} />
           <Route path={"/detail/:id"} element={<ItemDetailContainer />} />
         </Routes>
+         <Footer />
       </CartProvider>
      
 
