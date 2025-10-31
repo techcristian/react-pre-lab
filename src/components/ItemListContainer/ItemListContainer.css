@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
   gap: 3rem; /* espacio entre tarjetas */
-  padding: 1.5rem;
+  padding: 1rem;
   justify-items: center; /* centra las tarjetas dentro de cada celda */
 }
 
