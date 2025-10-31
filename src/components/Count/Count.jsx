@@ -10,14 +10,14 @@ export const Count = ({ btnText, onConfirm }) => {
   const decrement = () => {
     setCount((prev) => (prev > 0 ? prev - 1 : 0));
   }
- /*const confirm = () => count > 0 && onConfirm(count);*/
+ const confirm = () => count > 0 && onConfirm(count);
 
-const confirm = () =>{
+/*const confirm = () =>{
   if(count > 0){
     onConfirm(count);
     setCount(0);
   }
-}
+}*/
 
 
   return (
