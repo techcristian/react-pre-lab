@@ -1,37 +1,4 @@
-/*import { useCartContext } from "../../context/CartContex/useCartContext"
-import { Item } from "../Item/Item";
-import { Link } from "react-router-dom"
 
-export const Cart = () => {
- const { cart, setCart, addItem, ClearCart, getTotalItems, deleteItem, priceTotal, checkOut } = useCartContext();
-return (
-  <section>
-  <h2>Carrito de compras</h2>
-  {cart.length ? (
-    cart.map(prod => (
-      <Item key={prod.id} {...prod}>
-      <span>Cantidad: {prod.quantity}</span>
-      <button onClick={() => {deleteItem(prod)}}>Eliminar</button>
-      </Item>
-    ))
-  ):
-  (
-    <p>Tu carrito esta vacio</p>
-  )}
-  {cart.length ? (
-    <div>
-      <div>
-        <p>Total a pagar: ${priceTotal}</p>
-      </div>
-      <button onClick={checkOut}>Finalizar compra</button>
-      <button onClick={ClearCart}>Vaciar carrito</button>
-    </div>
-  ):(
-    <Link to={"/"}>Volver al inicio</Link>
-  )}
-</section>
-)
-}*/
 import { useCartContext } from "../../context/CartContex/useCartContext";
 import { Item } from "../Item/Item";
 import { Link } from "react-router-dom";
