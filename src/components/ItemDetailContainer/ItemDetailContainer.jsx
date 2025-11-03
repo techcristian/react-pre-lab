@@ -10,7 +10,7 @@ useEffect(() => {
  fetch("/data/products.json")
   .then((res) => {
     if(!res.ok){
-      throw new Error("No se encontro ningun producto");
+       throw new Error("No se encontro ningun producto");
     }
     return res.json();
   })

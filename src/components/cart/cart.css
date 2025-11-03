@@ -1,0 +1,138 @@
+.cart-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #0d1b2a;
+  margin-bottom: 2rem;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+}
+
+.cart-item span {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #1b263b;
+}
+
+.cart-item button {
+  margin-top: 0.8rem;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cart-item button:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
+
+/* 🔹 Sección de totales */
+.cart-summary {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cart-summary p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d1b2a;
+  margin-bottom: 1rem;
+}
+
+.cart-summary button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cart-summary button:first-of-type {
+  background-color: #00b4d8;
+  color: #fff;
+}
+
+.cart-summary button:first-of-type:hover {
+  background-color: #0096c7;
+  transform: scale(1.05);
+}
+
+.cart-summary button:last-of-type {
+  background-color: #1b263b;
+  color: #fff;
+}
+
+.cart-summary button:last-of-type:hover {
+  background-color: #0d1b2a;
+  transform: scale(1.05);
+}
+
+/* 🔹 Vacío */
+.cart-empty {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.cart-empty a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #00b4d8;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.cart-empty a:hover {
+  background-color: #0096c7;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 1rem;
+  }
+
+  .cart-item {
+    padding: 0.8rem;
+  }
+
+  .cart-summary button {
+    width: 100%;
+  }
+}

@@ -19,7 +19,6 @@ export const Count = ({ btnText, onConfirm }) => {
   }
 }*/
 
-
   return (
  
     <div class="count-container">

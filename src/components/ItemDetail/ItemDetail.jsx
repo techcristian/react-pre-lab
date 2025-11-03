@@ -5,9 +5,11 @@ import { Item } from "../Item/Item"
 export const ItemDetail = ({ detail }) => {
 
  const {addItem}= useCartContext();
+ 
  const handleAdd = (quantity) => {
   addItem({...detail, quantity})
  }
+ 
   return (
     <>
       <Item {...detail}>
