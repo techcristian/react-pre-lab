@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CartContext } from './CartContext'
+import { formatPrice } from '../../libs/format.price';
 
 
 export const CartProvider = ({ children }) => {
@@ -66,16 +67,19 @@ export const CartProvider = ({ children }) => {
     const ok = confirm(`¿Seguro que desea continuar con la compra?`);
     if (ok) {
       let resumen = "Resumen de tu compra:\n\n";
-      cart.forEach((p) => {
-        resumen += ` ${p.name} (x${p.quantity}) - $${p.price * p.quantity}\n`;
+      
+        cart.forEach((p) => {
+        resumen += `Item: ${p.name} - p.unid: ${formatPrice(p.price)} - cant:(x${p.quantity}) = ${formatPrice(p.price * p.quantity)}\n`;
+        
       });
-      resumen += `\n Total a pagar: $${priceTotal()}`;
+      resumen += `\n Total a pagar: $${formatPrice(priceTotal())}`;
       alert(resumen);
 
       // Limpia el carrito
       ClearCart();
     }
   };
+  
 
   return <CartContext.Provider value={{ cart, setCart, addItem, ClearCart, getTotalItems, deleteItem, priceTotal, checkOut }}>{children}</CartContext.Provider>
 }
