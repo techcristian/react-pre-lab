@@ -1,18 +1,20 @@
 .btn-item {
   border-radius: 8px;
   border: 1px solid transparent;
+  margin-top: 10px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #052d07;
-  color: #fdfdfd;
+   background-color: #151582;
+  color: #fff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 .btn-item:hover {
-   background-color: #13f131;
-  color: #052d07;
-  border: 1px solid #052d07;
+  background-color: #ffffff;
+  color:#151582;
+  border: 1px solid #151582;
+  transform: scale(1.05);
   
 }

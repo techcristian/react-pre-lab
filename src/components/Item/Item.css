@@ -29,9 +29,7 @@ article img {
 
 article h1 {
   font-size: 1.2rem;
- /* color: #222222;*/
- /*color: #ae07f6;*/
- color:#134609;
+ color:#2d3731;
   margin-bottom: 0.5rem;
 }
 
@@ -43,7 +41,10 @@ article p {
 
 article p:first-of-type {
   font-weight: bold;
-  color: #0078d7; /* color del precio */
+  color: #384246; /* color del precio */
+}
+article p span{
+   color: #0b0b9c; /* color del precio */
 }
 
 @media (max-width: 480px) {

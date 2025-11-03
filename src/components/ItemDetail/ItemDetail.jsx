@@ -14,6 +14,7 @@ export const ItemDetail = ({ detail }) => {
     <>
       <Item {...detail}>
         <Count btnText={"Agregar al carrito"} onConfirm={handleAdd}/>
+        
       
       </Item>
     </>

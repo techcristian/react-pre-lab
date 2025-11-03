@@ -57,7 +57,7 @@
   transform: scale(1.05);
 }
 
-/* 🔹 Sección de totales */
+/* Sección de totales */
 .cart-summary {
   margin-top: 2rem;
   text-align: center;
@@ -81,7 +81,7 @@
 }
 
 .cart-summary button:first-of-type {
-  background-color: #00b4d8;
+  background-color: #0053d8;
   color: #fff;
 }
 
@@ -91,16 +91,67 @@
 }
 
 .cart-summary button:last-of-type {
-  background-color: #1b263b;
+  background-color: #0475ff;
   color: #fff;
 }
 
 .cart-summary button:last-of-type:hover {
-  background-color: #0d1b2a;
+  background-color: #fdfdfd;
+  color:#0475ff;
+  border: 1px solid #0475ff;
+  font-weight: bold;
   transform: scale(1.05);
 }
+ .seguir{
+    background-color: #62ed06 !important;
+  color: #0c0c0c !important;
+ }
+ .seguir:hover{
+   background-color: #fdfdfd !important;
+  color:#0c0c0c  !important;
+  border: 1px solid #0c0c0c !important;
+  font-weight: bold;
+  transform: scale(1.05);
+ }
+.ir-producto {
+  background-color: #07042b !important; /* azul celeste */
+  color: #fff !important;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
 
-/* 🔹 Vacío */
+.ir-producto:hover {
+  background-color: #fcfcfc !important;
+  color:#07042b !important;
+  border: 1px solid #07042b !important;;
+  transform: scale(1.05);
+}
+.eliminar-prod{
+    background-color: #fc0101 !important; /* azul celeste */
+  color: #fff !important;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.eliminar-prod:hover{
+    background-color: #f7f2f2 !important; /* azul celeste */
+  color: #fa0101 !important;
+  border: 1px solid #fa0101 !important;;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Volver al producto */
 .cart-empty {
   text-align: center;
   font-size: 1.1rem;
@@ -110,7 +161,7 @@
 .cart-empty a {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #00b4d8;
+   background-color: #080826;
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 0.6rem;
@@ -119,7 +170,10 @@
 }
 
 .cart-empty a:hover {
-  background-color: #0096c7;
+  background-color: #ffffff;
+  color:#151582;
+  border: 1px solid #151582;
+  transform: scale(1.05);
 }
 
 /* 📱 Responsive */

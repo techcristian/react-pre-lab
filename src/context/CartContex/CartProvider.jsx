@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { CartContext } from './CartContext'
-import { useMemo } from "react";
+
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
@@ -51,16 +51,31 @@ export const CartProvider = ({ children }) => {
  const priceTotal = () => {
     return Number(
       cart.reduce((acc, p) => acc + p.price * p.quantity, 0)
-    .toFixed(2));
+    .toFixed(1));
   };
-  // Finalizar compra
+  /*Finalizar compra
   const checkOut = () => {
-    const ok = confirm("¿Seguro que desea terminar de comprar?");
+    const ok = confirm(`¿Seguro que desea seguir con la compra de producto?`);
     if(ok){
-      alert("Compara finalizada exitosamente, gracias!");
+      alert("¡¡ Gracias por continuar con la compra !!");
       ClearCart();
     }
-  }
+  }*/
+   //  checkOut estado cart y priceTotal()
+  const checkOut = () => {
+    const ok = confirm(`¿Seguro que desea continuar con la compra?`);
+    if (ok) {
+      let resumen = "Resumen de tu compra:\n\n";
+      cart.forEach((p) => {
+        resumen += ` ${p.name} (x${p.quantity}) - $${p.price * p.quantity}\n`;
+      });
+      resumen += `\n Total a pagar: $${priceTotal()}`;
+      alert(resumen);
+
+      // Limpia el carrito
+      ClearCart();
+    }
+  };
 
   return <CartContext.Provider value={{ cart, setCart, addItem, ClearCart, getTotalItems, deleteItem, priceTotal, checkOut }}>{children}</CartContext.Provider>
 }

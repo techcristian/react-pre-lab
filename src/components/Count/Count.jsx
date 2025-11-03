@@ -1,5 +1,6 @@
 import { useState } from "react"
 import './Count.css'
+import { Link } from "react-router-dom";
 
 export const Count = ({ btnText, onConfirm }) => {
   const [count, setCount] = useState(0);
@@ -28,6 +29,11 @@ export const Count = ({ btnText, onConfirm }) => {
         <button className="btn" onClick={increment}>+</button>
       </div>
       <button className="btn" onClick={confirm} disabled={count === 0}>{btnText}</button>
+     <div className="btn-links">
+       <Link to={"/carrito"}><button className="ir-carrito" >{"Ir al carrito"}</button></Link>
+       <Link to={"/"}><button className="ir-home" >{"Seguir comprando"}</button></Link>
+     </div>
+   
     </div>
 
   )

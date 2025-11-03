@@ -26,14 +26,14 @@
 .count-buttons span {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #042df6;
+  color: #ff0303;
   min-width: 30px;
   text-align: center;
 }
 
 .btn {
-   background-color: #011102;
-  color: #fdfdfd;
+    background-color: #04041a;
+  color: #fff;
   border: none;
   padding: 0.5rem 0.9rem;
   border-radius: 0.6rem;
@@ -43,9 +43,9 @@
 }
 
 .btn:hover {
-    background-color: #04e804;
-  color: #fafafb;
-  border: 1px solid #011102;
+  background-color: #fdfdfd;
+  color:#06061f;
+  border: 1px solid #050520;
   transform: scale(1.05);
 }
 
@@ -53,6 +53,53 @@
   background-color: #a0a0a0;
   cursor: not-allowed;
   transform: none;
+}
+.ir-carrito{
+   background-color: #fb0303;
+  color: #fdfdfd;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+.ir-carrito:hover{
+   background-color: #fffefe;
+  color:#fb0505;
+  border: 1px solid #f90303;
+  transform: scale(1.05);
+ transform: translateY(-2px);
+}
+.btn-links {
+  display: flex;
+  justify-content: center;   /* Centra los botones horizontalmente */
+  align-items: center;
+  gap: 1rem;                  /* Espacio entre los botones */
+  margin-top: 1.5rem;         /* Separación del contenido superior */
+  flex-wrap: wrap;            /* Por si en móvil no entran, bajan uno debajo del otro */
+  padding: 20px;
+  border-radius: 8px;
+}
+.btn-links:hover{
+  background-color: #e3e0e0;
+}
+.ir-home{
+   background-color: #62ed06 !important;
+  color: #0c0c0c !important;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+.ir-home:hover{
+   background-color: #fdfdfd !important;
+  color:#0c0c0c  !important;
+  border: 1px solid #0c0c0c !important;
+  transform: scale(1.05);
+ transform: translateY(-2px);
 }
 
 @media (max-width: 480px) {
