@@ -6,7 +6,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import './App.css'
 import { CartProvider } from "./context/CartContex/CartProvider"
 import { Footer } from "./components/Footer/Footer"
-import { Cart } from './components/Cart/Cart'
+import { Cart } from '../components/Cart/Cart'
 
 
 
