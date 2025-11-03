@@ -6,7 +6,8 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import './App.css'
 import { CartProvider } from "./context/CartContex/CartProvider"
 import { Footer } from "./components/Footer/Footer"
-import { Cart } from "./components/cart/cart"
+import {Cart} from './componentes/Cart/Cart'
+
 
 function App() {
 
