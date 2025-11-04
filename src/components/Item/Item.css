@@ -44,7 +44,7 @@ article p:first-of-type {
   color: #384246; /* color del precio */
 }
 article p span{
-   color: #769001 !important;; /* color del precio */
+   color: #769001 !important; /* color del precio */
 }
 
 @media (max-width: 480px) {

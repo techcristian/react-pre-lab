@@ -3,6 +3,7 @@ import { CartContext } from './CartContext'
 import { formatPrice } from '../../libs/format.price';
 
 
+
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
@@ -66,12 +67,12 @@ export const CartProvider = ({ children }) => {
       });
       resumen += `\n Total a pagar: $${formatPrice(priceTotal())}`;
       alert(resumen);
-
       // Limpia el carrito
       ClearCart();
     }
-  };
 
+  };
+ 
 
   return <CartContext.Provider value={{ cart, setCart, addItem, ClearCart, getTotalItems, deleteItem, priceTotal, checkOut }}>{children}</CartContext.Provider>
 }
