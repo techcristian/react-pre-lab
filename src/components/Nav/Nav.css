@@ -1,12 +1,17 @@
-nav {
-  /*background-color: #0d1b2a;*/
+nav{
+  width: 94%;
   background-color: #62ed06;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
   z-index: 100;
-  
+  display: flex;
+  justify-content: space-around;
+
+}
+.logo{
+ margin: 0;
 }
 
 nav ul {
@@ -33,7 +38,7 @@ nav a {
   text-decoration: none;
    color:#134609;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0.4rem 0.8rem;
   border-radius: 0.5rem;
   transition: background-color 0.2s ease, color 0.2s ease;

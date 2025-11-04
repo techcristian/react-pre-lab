@@ -10,6 +10,7 @@ import { Cart } from './components/cart/cart'
 
 
 
+
 function App() {
 
 
@@ -17,7 +18,7 @@ function App() {
     <>
       <BrowserRouter>
       <CartProvider>
-         <Nav />
+       <Nav/>
         <Routes>
           <Route path={"/"} element={<ItemListContainer />} />
           <Route path={"/detail/:id"} element={<ItemDetailContainer />} />

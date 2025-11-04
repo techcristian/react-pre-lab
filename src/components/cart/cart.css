@@ -178,7 +178,7 @@
 .cart-empty a {
   display: inline-block;
   margin-top: 1rem;
-   background-color:  #769001 !important; 
+   background-color:  #052d07 !important; 
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 0.6rem;
@@ -188,8 +188,8 @@
 
 .cart-empty a:hover {
   background-color: #ffffff !important;
-  color:#769001 !important; 
-  border: 1px solid #769001 !important;
+  color:#052d07 !important; 
+  border: 1px solid #052d07 !important;
   transform: scale(1.05);
 }
 

@@ -6,6 +6,7 @@ export const Nav = () => {
   const {getTotalItems} = useCartContext();
   return (
     <nav>
+     <Link to={"/"}> <h1 className="logo">Relojeria</h1></Link>
     <ul>
       <li><Link to={"/"}>  Home</Link> </li>
       <li><Link to={"/category/analogico"}>  Analogico</Link> </li>
