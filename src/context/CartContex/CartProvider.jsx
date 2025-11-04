@@ -49,28 +49,20 @@ export const CartProvider = ({ children }) => {
   }
 
   // precio total del carrito
- const priceTotal = () => {
+  const priceTotal = () => {
     return Number(
-      cart.reduce((acc, p) => acc + p.price * p.quantity, 0)
-    .toFixed(1));
+      cart.reduce((acc, p) => acc + p.price * p.quantity, 0));
   };
-  /*Finalizar compra
-  const checkOut = () => {
-    const ok = confirm(`¿Seguro que desea seguir con la compra de producto?`);
-    if(ok){
-      alert("¡¡ Gracias por continuar con la compra !!");
-      ClearCart();
-    }
-  }*/
-   //  checkOut estado cart y priceTotal()
+
+  //  checkOut estado cart y priceTotal()
   const checkOut = () => {
     const ok = confirm(`¿Seguro que desea continuar con la compra?`);
     if (ok) {
       let resumen = "Resumen de tu compra:\n\n";
-      
-        cart.forEach((p) => {
-        resumen += `Item: ${p.name} - p.unid: ${formatPrice(p.price)} - cant:(x${p.quantity}) = ${formatPrice(p.price * p.quantity)}\n`;
-        
+
+      cart.forEach((p) => {
+        resumen += `Item: ${p.name} - p.unid: ${formatPrice(p.price)} - cant: (${p.quantity}) = ${formatPrice(p.price * p.quantity)}\n`;
+
       });
       resumen += `\n Total a pagar: $${formatPrice(priceTotal())}`;
       alert(resumen);
@@ -79,7 +71,7 @@ export const CartProvider = ({ children }) => {
       ClearCart();
     }
   };
-  
+
 
   return <CartContext.Provider value={{ cart, setCart, addItem, ClearCart, getTotalItems, deleteItem, priceTotal, checkOut }}>{children}</CartContext.Provider>
 }

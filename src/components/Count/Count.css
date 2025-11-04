@@ -22,7 +22,7 @@
   align-items: center;
   gap: 1rem;
 }
-
+/*numerito*/
 .count-buttons span {
   font-size: 1.2rem;
   font-weight: bold;
@@ -32,7 +32,7 @@
 }
 
 .btn {
-    background-color: #04041a;
+  background-color: #04041a;
   color: #fff;
   border: none;
   padding: 0.5rem 0.9rem;
@@ -73,11 +73,11 @@
 }
 .btn-links {
   display: flex;
-  justify-content: center;   /* Centra los botones horizontalmente */
+  justify-content:space-between;   /* Centra los botones horizontalmente */
   align-items: center;
   gap: 1rem;                  /* Espacio entre los botones */
   margin-top: 1.5rem;         /* Separación del contenido superior */
-  flex-wrap: wrap;            /* Por si en móvil no entran, bajan uno debajo del otro */
+  flex-wrap: wrap;           /* Por si en móvil no entran, bajan uno debajo del otro */
   padding: 20px;
   border-radius: 8px;
 }

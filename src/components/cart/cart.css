@@ -18,7 +18,9 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
 }
+
 
 .cart-item {
   display: flex;
@@ -32,6 +34,7 @@
 }
 
 .cart-item:hover {
+    background-color:#dcd6d6;
   transform: translateY(-3px);
 }
 
@@ -61,6 +64,13 @@
 .cart-summary {
   margin-top: 2rem;
   text-align: center;
+  border-radius:10px;
+  padding:10px
+}
+.cart-summary:hover {
+  margin-top: 2rem;
+  text-align: center;
+  background-color:#e3dede;
 }
 
 .cart-summary p {
@@ -113,6 +123,15 @@
   font-weight: bold;
   transform: scale(1.05);
  }
+ .cart-buttons {
+  display: flex;
+  justify-content: space-between;  /* separa los botones */
+  align-items: center;
+  gap: 1rem;                        /* deja un espacio entre ellos */
+  margin-top: 1rem;
+  flex-wrap: wrap;                  /* por si en móvil no entran, bajan en otra línea */
+}
+
 .ir-producto {
   background-color: #07042b !important; /* azul celeste */
   color: #fff !important;
