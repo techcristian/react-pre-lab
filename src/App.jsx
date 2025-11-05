@@ -8,9 +8,6 @@ import { CartProvider } from "./context/CartContex/CartProvider"
 import { Footer } from "./components/Footer/Footer"
 import { Cart } from './components/cart/cart'
 
-
-
-
 function App() {
 
 

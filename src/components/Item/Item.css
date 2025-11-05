@@ -46,6 +46,20 @@ article p:first-of-type {
 article p span{
    color: #052d07; /* color del precio */
 }
+spoiler-span {
+background-image: url("../../../public/images/casio-sumergible.webp");
+  color:white;
+  border-radius: 4px;
+  transition: color 0.3s, background-color 0.3s;
+  cursor: pointer;
+  padding: 0.3rem 0.3rem;
+
+}
+
+spoiler-span:hover {
+  background-color: transparent;
+  color: transparent;
+}
 
 @media (max-width: 480px) {
   article {

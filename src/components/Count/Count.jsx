@@ -25,10 +25,12 @@ export const Count = ({ btnText, onConfirm }) => {
     <div class="count-container">
       <div class="count-buttons" >
         <button className="btn" onClick={decrement} disabled={count === 0}>-</button>
-        <span>{count}</span>
+        <p>{count}</p>
         <button className="btn" onClick={increment}>+</button>
       </div>
+
       <button className="btn" onClick={confirm} disabled={count === 0}>{btnText}</button>
+
      <div className="btn-links">
        <Link to={"/carrito"}><button className="ir-carrito" >{"Carrito"}</button></Link>
        <Link to={"/"}><button className="ir-home" >{"Volver"}</button></Link>

@@ -1,6 +1,6 @@
 .footer {
-  /*background-color: #0d1b2a;*/
-   background-color: #62ed06;
+width: 95%;
+   background-color: #0c75f5;
   color: #f0f0f0;
   padding: 2rem 1.5rem 1rem 1.5rem;
   font-family: sans-serif;
@@ -10,7 +10,7 @@
   text-align: center;
   margin-top: 2rem;
   font-size: 0.85rem;
-  color:#134609;
+  color:#ffffff;
 }
 
 /* 📱 Responsive */

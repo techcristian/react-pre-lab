@@ -1,7 +1,7 @@
 
 nav{
-  width: 100%;
-  background-color: #62ed06;
+  width: 95%;
+  background-color: #0c75f5;
   padding: 1rem 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   position: sticky;
@@ -9,10 +9,18 @@ nav{
   z-index: 100;
   display: flex;
   justify-content:space-between;
-  padding:0;
 
 }
+.span-logo{
+  font-size: 1.5rem;
+  color:white;
 
+}
+.span-logo:hover{
+  font-size: 1.5rem;
+  color:rgb(2, 5, 19);
+  
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -45,51 +53,6 @@ nav a {
 }
 
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0a0a0a;
-  color: white;
-  padding: 0.8rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.logo-img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  padding-top: 0.2rem;
-}
-
-.logo-img:hover {
-  transform: scale(3);
-}
-
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #134609;;
-}
-
-.logo-text:hover {
- font-size: 1.4rem;
-  font-weight: 700;
-   background-color: rgb(3, 36, 9);
-  color: rgb(253, 253, 253) !important;
-  padding: 0.3rem 0.8rem;
-  border-radius: 8px;
-  transform: translateY(-3px);
-   
-}
-
 
 nav ul li {
   display: flex;
@@ -97,15 +60,15 @@ nav ul li {
   gap: 1.5rem;
 }
 nav ul li a {
-  color: rgb(3, 36, 9) !important;
+  color: #010103 !important;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: rgb(3, 36, 9);
-  color: rgb(253, 253, 253) !important;
+  background-color: rgb(255, 255, 255);
+  color: #010103  !important;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -127,6 +90,16 @@ nav li span {
   min-width: 18px;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive */
 @media (max-width: 600px) {
