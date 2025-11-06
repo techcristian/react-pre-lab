@@ -29,10 +29,27 @@
 /*numerito .count-container .count-buttons p { 
   font-size: 1.2rem; font-weight: bold; color: #0b0424; min-width: 30px; text-align: center; text-decoration: none; 
 }*/
-.btn { background-color: #04041a; color: #fff; border: none; padding: 0.5rem 0.9rem; border-radius: 0.6rem; font-size: 1rem; cursor: pointer; transition: background-color 0.25s ease, transform 0.2s ease; outline: none !important; text-decoration: none !important; }
-.btn:hover { background-color: #fdfdfd; color:#06061f; border: 1px solid #050520; transform: scale(1.05); }
+.btn {
+   background-color:
+   #04041a; color:
+    #fff; border: none;
+     padding: 0.5rem 0.9rem;
+      border-radius: 0.6rem;
+       font-size: 1rem; 
+       cursor: pointer; 
+       transition: background-color 0.25s ease, 
+       transform 0.2s ease; 
+       outline: none !important;
+        text-decoration: none !important; }
+.btn:hover { 
+  background-color: #fdfdfd; 
+  color:#06061f; 
+  border: 1px solid #050520; 
+  transform: scale(1.05); }
 .btn:disabled {
-  background-color: #a0a0a0;
+  background-color: #ffffff;
+  color:#050520;
+    border: 1px solid #050520; 
   cursor: not-allowed;
   transform: none;
 }
