@@ -2,7 +2,7 @@ import { useState } from "react"
 import './Count.css'
 import { Link } from "react-router-dom";
 
-export const Count = ({ btnText, onConfirm }) => {
+export const Count = ({  onConfirm }) => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
@@ -13,12 +13,6 @@ export const Count = ({ btnText, onConfirm }) => {
   }
  const confirm = () => count > 0 && onConfirm(count);
 
-/*const confirm = () =>{
-  if(count > 0){
-    onConfirm(count);
-    setCount(0);
-  }
-}*/
 
   return (
  
@@ -29,7 +23,7 @@ export const Count = ({ btnText, onConfirm }) => {
         <button className="btn" onClick={increment}>+</button>
       </div>
 
-      <button className="btn" onClick={confirm} disabled={count === 0}>{btnText}</button>
+      <button className="btn" onClick={confirm} disabled={count === 0}>{"Agregar al carrito"}</button>
 
      <div className="btn-links">
        <Link to={"/carrito"}><button className="ir-carrito" >{"Carrito"}</button></Link>

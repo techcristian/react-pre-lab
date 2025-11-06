@@ -46,6 +46,26 @@ article p:first-of-type {
 article p span{
    color: #052d07; /* color del precio */
 }
+/* Contenedor de precios */
+.price-section {
+  margin-top: 0.5rem;
+}
+
+/* Precio original tachado */
+.price-old {
+  color: #555;
+  text-decoration: line-through;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Precio en oferta */
+.price-off {
+  color: #e60000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+}
 spoiler-span {
 background-image: url("../../../public/images/casio-sumergible.webp");
   color:white;

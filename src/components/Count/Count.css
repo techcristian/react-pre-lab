@@ -23,7 +23,7 @@
   gap: 1rem;
 }
 /*numerito*/ .count-container .count-buttons p { 
-  font-size: 1.2rem; font-weight: bold; color: #ff0303; min-width: 30px; text-align: center; text-decoration: none; 
+  font-size: 1.2rem; font-weight: bold; color: #0b0424; min-width: 30px; text-align: center; text-decoration: none; 
 }
 .btn { background-color: #04041a; color: #fff; border: none; padding: 0.5rem 0.9rem; border-radius: 0.6rem; font-size: 1rem; cursor: pointer; transition: background-color 0.25s ease, transform 0.2s ease; outline: none !important; text-decoration: none !important; }
 .btn:hover { background-color: #fdfdfd; color:#06061f; border: 1px solid #050520; transform: scale(1.05); }
@@ -32,28 +32,11 @@
   cursor: not-allowed;
   transform: none;
 }
-.ir-carrito{
-   background-color: #0636f5;
-  color: #fdfdfd;
-  border: none;
-  padding: 0.5rem 0.9rem;
-  border-radius: 0.6rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.25s ease, transform 0.2s ease;
-}
-.ir-carrito:hover{
-   background-color: #fffefe;
-  color:#0636f5;
-  border: 1px solid #0636f5;
-  transform: scale(1.05);
- transform: translateY(-2px);
-}
 .btn-links {
   display: flex;
   justify-content:space-between;   /* Centra los botones horizontalmente */
   align-items: center;
-  gap: 1rem;                  /* Espacio entre los botones */
+  gap: 1.2rem;                  /* Espacio entre los botones */
   margin-top: 1.5rem;         /* Separación del contenido superior */
   flex-wrap: wrap;           /* Por si en móvil no entran, bajan uno debajo del otro */
   padding: 20px;
@@ -62,11 +45,33 @@
 .btn-links:hover{
   background-color: #e3e0e0;
 }
+.ir-carrito{
+  width: 100%;
+   background-color: #0636f5;
+  color: #fdfdfd;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+transform: translateX(5px);
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.ir-carrito:hover{
+   background-color: #fffefe;
+  color:#0636f5;
+  border: 1px solid #0636f5;
+  transform: scale(1.2);
+
+}
+
 .ir-home{
+  width: 100%;
    background-color: #8c8e8c !important;
   color: #ffffff !important;
   border: none;
-  padding: 0.5rem 0.9rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.6rem;
   font-size: 1rem;
   cursor: pointer;
@@ -76,8 +81,8 @@
    background-color: #fdfdfd !important;
   color:#8c8e8c !important;
   border: 1px solid #8c8e8c  !important;
-  transform: scale(1.05);
- transform: translateY(-2px);
+  transform: scale(1.2);
+
 }
 
 @media (max-width: 480px) {

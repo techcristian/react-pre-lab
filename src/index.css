@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(175, 169, 169, 0.87);
-  background-color: #feffff;
+  /*background-color: #feffff;*/
+  background-image: url("../public/images/Dull.jpg");
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

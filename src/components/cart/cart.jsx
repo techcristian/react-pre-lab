@@ -19,9 +19,9 @@ export const Cart = () => {
             {cart.map((prod) => (
               <div key={prod.id} className="cart-item">
                 <p>Producto: {prod.name}</p>
-                <p>Precio: {formatPrice(prod.price)}</p>
+                <p className="price-off">Oferta -10%: {formatPrice(prod.price * 0.9)}</p>
                 <p>Cantidad: {prod.quantity}</p>
-                <p>Sub-Total: {formatPrice(prod.price * prod.quantity)}</p>
+                <p>Sub-Total: {formatPrice((prod.price * 0.9) * prod.quantity)}</p>
                 <div className="cart-buttons">
                   <button onClick={() => deleteItem(prod)} className="eliminar-prod">Eliminar productos</button>
                   <Link to={`/detail/${prod.id}`}><button className="ir-producto">Volver al producto</button></Link>

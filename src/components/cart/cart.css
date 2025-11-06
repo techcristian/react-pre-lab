@@ -32,7 +32,7 @@
 }
 
 .cart-item:hover {
-    background-color:#dcd6d6;
+    background-color:#e8e3e3;
   transform: translateY(-3px);
 }
 
@@ -40,6 +40,12 @@
   margin-top: 0.5rem;
   font-weight: 600;
   color: #1b263b;
+}
+ .price-off {
+  color: #e60000 !important;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
 }
 
 .cart-item button {
@@ -77,6 +83,7 @@
   color: #0d1b2a;
   margin-bottom: 1rem;
 }
+
 
 .cart-summary button {
   margin: 0.5rem;
@@ -116,8 +123,8 @@
  }
  .seguir:hover{
    background-color: #fdfdfd !important;
-  color:#959794   !important;
-  border: 1px solid #959794  !important;
+  color:#7e7f7e   !important;
+  border: 1px solid #868785  !important;
   font-weight: bold;
   transform: scale(1.05);
  }
@@ -192,6 +199,7 @@
   border: 1px solid #0428f4  !important;
   transform: scale(1.05);
 }
+
 
 /* 📱 Responsive */
 @media (max-width: 768px) {
