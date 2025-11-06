@@ -1,7 +1,7 @@
 
 nav{
   width: 95%;
-  background-image: url("../../../public/images/Kimoby\ Is\ The\ New\ Blue.jpg");
+  background-image: url("../../../public/images/Very\ Blue.jpg");
   padding: 1rem 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   position: sticky;
@@ -44,7 +44,7 @@ nav li:hover {
 
 nav a {
   text-decoration: none;
-   color:#134609;
+   color:#ffffff;
   font-weight: 500;
   font-size: 1rem;
   padding: 0.4rem 0.8rem;
@@ -52,15 +52,13 @@ nav a {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-
-
 nav ul li {
   display: flex;
   list-style: none;
   gap: 1.5rem;
 }
 nav ul li a {
-  color: #010103 !important;
+  color: #ffffff !important;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
