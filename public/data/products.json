@@ -4,7 +4,7 @@
     "name": "Casio Original",
     "price": 100000,
     "description": "Reloj clásico Casio con diseño elegante y resistente al agua, ideal para uso diario.",
-    "category": "analógico",
+    "category": "analogico",
     "imageUrl": "/images/casio-original.webp"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Casio Sumergible",
     "price": 300000,
     "description": "Reloj digital Casio con alarma, calendario automático, ideal resistente al agua.",
-    "category": "digital",
-    "imageUrl": "/images/casio-sumergible.webp"
+    "category": "sumergible",
+    "imageUrl": "/images/casio-sumergible-off.png"
   }
 ]

@@ -6,15 +6,15 @@
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
- background-image:url("../../../public/images/Very\ Blue.jpg");
+ background-image:url("../../../public/images/Frost.jpg");
   color: #fdfdfd;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 .btn-item:hover {
   background:white !important;
- color: #2543ec !important;
-  border: 1px solid  #3854f1 !important;
+ color: #091142 !important;
+  border: 1px solid  #070c2a !important;
   font-weight: bold;
   transform: scale(1.05);
   

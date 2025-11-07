@@ -16,18 +16,19 @@ export const Nav = () => {
 
   return (
     <nav>
-      
-        <Link to="/">
-          <span className="span-logo">
-             Casio Store
-          </span>
-        </Link>
-      
-      <ul>
 
+      <Link to="/">
+        <span className="span-logo">
+        Watch Shop
+        </span>
+      </Link>
+
+      <ul>
+        <li><Link to={"/"}>  Home</Link> </li>
         <li><Link to={"/category/analogico"}>  Analogico</Link> </li>
         <li><Link to={"/category/deportivo"}>  Deportivo</Link> </li>
         <li><Link to={"/category/digital"}>  Digital</Link> </li>
+        <li><Link to={"/category/sumergible"}>  Sumergible</Link> </li>
         <li><Link to={"/carrito"}>  Carrito </Link>
           {
             getTotalItems() > 0 && (

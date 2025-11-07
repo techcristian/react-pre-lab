@@ -17,8 +17,7 @@
 .count-container:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgb(123, 121, 121);
-  background-image: url("../../../public/images/Very\ Blue.jpg");
-  color: white;
+  background: rgb(240, 238, 238);
 }
 
 .count-buttons {
@@ -26,9 +25,7 @@
   align-items: center;
   gap: 1rem;
 }
-/*numerito .count-container .count-buttons p { 
-  font-size: 1.2rem; font-weight: bold; color: #0b0424; min-width: 30px; text-align: center; text-decoration: none; 
-}*/
+
 .btn {
    background-color:
    #04041a; color:
@@ -49,7 +46,7 @@
 .btn:disabled {
   background-color: #ffffff;
   color:#050520;
-    border: 1px solid #050520; 
+  border: 1px solid #050520; 
   cursor: not-allowed;
   transform: none;
 }
@@ -77,7 +74,7 @@
   border-radius: 0.6rem;
   font-size: 1rem;
   cursor: pointer;
-margin-left: -5px;
+  margin-left: -5px;
   transition: background-color 0.25s ease, transform 0.2s ease;
 }
 

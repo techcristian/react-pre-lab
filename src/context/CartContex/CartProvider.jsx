@@ -51,8 +51,11 @@ export const CartProvider = ({ children }) => {
 
   // precio total del carrito
   const priceTotal = () => {
-    return Number(
-      cart.reduce((acc, p) => acc + (p.price * 0.9) * p.quantity, 0));
+    return  cart.reduce((acc, prod) => {
+                const isSumergible = prod.name.toLowerCase() === "casio sumergible";
+                const discountPrice = isSumergible ? prod.price * 0.6 : prod.price * 0.9;
+                return acc + discountPrice * prod.quantity;
+              }, 0)
   };
 
   //  checkOut estado cart y priceTotal()
@@ -62,7 +65,9 @@ export const CartProvider = ({ children }) => {
       let resumen = "Resumen de tu compra:\n\n";
 
       cart.forEach((p) => {
-        resumen += `Item: ${p.name} - Oferta 10%: ${formatPrice(p.price * 0.9)} - cant: (${p.quantity}) = ${formatPrice((p.price * 0.9) * p.quantity)}\n`;
+         const isSumergible = p.name.toLowerCase() === "casio sumergible";
+        isSumergible ? resumen += `Item: ${p.name} - Oferta 40%: ${formatPrice(p.price * 0.6)} - cant: (${p.quantity}) = ${formatPrice((p.price * 0.6) * p.quantity)}\n`: resumen += `Item: ${p.name} - Oferta 10%: ${formatPrice(p.price * 0.9)} - cant: (${p.quantity}) = ${formatPrice((p.price * 0.9) * p.quantity)}\n`;
+       
 
       });
       resumen += `\n Total a pagar: $${formatPrice(priceTotal())}`;

@@ -14,16 +14,19 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <CartProvider>
-       <Nav/>
-        <Routes>
-          <Route path={"/"} element={<ItemListContainer />} />
-          <Route path={"/detail/:id"} element={<ItemDetailContainer />} />
-          <Route path={"/carrito"} element={<Cart />} />
-        </Routes>
-         <Footer />
-      </CartProvider>
-     
+        <CartProvider>
+          <Nav />
+          <Routes>
+            <Route path={"/"} element={<ItemListContainer />} />
+            <Route path={"/detail/:id"} element={<ItemDetailContainer />} />
+
+            <Route path={"/category/:category"} element={<ItemListContainer />} />
+           
+            <Route path={"/carrito"} element={<Cart />} />
+          </Routes>
+          <Footer />
+        </CartProvider>
+
 
       </BrowserRouter>
     </>
