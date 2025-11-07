@@ -5,7 +5,7 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background:  #ffffff;
+  background-color:rgb(243, 241, 241);
  color: #0c0c17;
  font-size: 1.2rem; font-weight: bold;
   border-radius: 1rem;
@@ -27,9 +27,8 @@
 }
 
 .btn {
-  background-color: #a1a1a3;
-   color:
-    #fff; 
+  background: rgb(181, 177, 177);
+   color: #fff; 
     border: none;
      padding: 0.5rem 0.9rem;
       border-radius: 0.6rem;
@@ -53,7 +52,8 @@
 }
 .btn-links {
   width: 250px;
-  display: flex;
+ background: rgb(240, 238, 238);
+ display: flex;
   justify-content:space-around;   /* Centra los botones horizontalmente */
   align-items: center;
   gap: 1.2rem;                  /* Espacio entre los botones */
@@ -64,7 +64,7 @@
 
 }
 .btn-links:hover{
-  background-color: #fffefe;
+  background-color: #c3c1c1;
 }
 .ir-carrito{
   width: 150%;
@@ -75,7 +75,7 @@
   border-radius: 0.6rem;
   font-size: 1rem;
   cursor: pointer;
-  margin-left: -5px;
+  margin-left: -15px;
   transition: background-color 0.25s ease, transform 0.2s ease;
 }
 

@@ -8,7 +8,7 @@ export const Item = ({  name, description, price, imageUrl, children }) => {
 
   return <article>
     <img src={imageUrl} alt={description} />
-    <h1>{name}</h1>
+    <h1>Modelo: {name}</h1>
     <div className="price-section">
       <p className="price-old">Precio: {formatPrice(price)}</p>
       {name.toLowerCase() === "casio sumergible" ? (

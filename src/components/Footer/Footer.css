@@ -1,7 +1,7 @@
 .footer {
-width: 95%;
-   background-image:url("../../../public/images/Very\ Blue.jpg");
-  color: #f0f0f0;
+  width: 95%;
+  background-color:rgb(226, 225, 230);
+  color: #5d5d5d;
   padding: 2rem 1.5rem 1rem 1.5rem;
   font-family: sans-serif;
 }
@@ -10,7 +10,7 @@ width: 95%;
   text-align: center;
   margin-top: 2rem;
   font-size: 0.85rem;
-  color:#ffffff;
+  color:#595858;
 }
 
 /* 📱 Responsive */

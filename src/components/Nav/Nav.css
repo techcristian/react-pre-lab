@@ -1,7 +1,7 @@
 
 nav{
   width: 95%;
-  background-image: url("../../../public/images/Very\ Blue.jpg");
+  background-color:rgb(226, 225, 230);
   padding: 1rem 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   position: sticky;
@@ -14,7 +14,7 @@ nav{
 
 .span-logo{
   font-size: 1.5rem;
-  color:white;
+ color: #575656;
 
 }
 .span-logo:hover{
@@ -52,9 +52,9 @@ nav ul li {
   gap: 1.5rem;
 }
 nav ul li a {
-  color: #ffffff;
+  color: #575656;
   text-decoration: none;
-  font-weight: 500;
+
   transition: color 0.3s;
     padding:0.3rem 0.5rem;
   border-radius:8px;
