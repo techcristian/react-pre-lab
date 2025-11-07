@@ -11,6 +11,7 @@ nav{
   justify-content:space-between;
 
 }
+
 .span-logo{
   font-size: 1.5rem;
   color:white;
@@ -18,7 +19,7 @@ nav{
 }
 .span-logo:hover{
   font-size: 1.5rem;
-  color:rgb(2, 5, 19);
+  color: #080842  !important;
   
 }
 nav ul {
@@ -39,18 +40,11 @@ nav li {
 }
 
 nav li:hover {
-  transform: translateY(-3px);
+  transform: translateY(-3px)
 }
+/*nav a {
 
-nav a {
-  text-decoration: none;
-   color:#ffffff;
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
+}*/
 
 nav ul li {
   display: flex;
@@ -58,15 +52,17 @@ nav ul li {
   gap: 1.5rem;
 }
 nav ul li a {
-  color: #ffffff !important;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+    padding:0.3rem 0.5rem;
+  border-radius:8px;
 }
 
 nav ul li a:hover {
   background-color: rgb(255, 255, 255);
-  color: #010103  !important;
+  color: #6f6f72;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -89,7 +85,10 @@ nav li span {
   text-align: center;
 }
 
-
+.link-span-logo{
+  text-decoration: none;
+  outline: none;
+}
 
 
 

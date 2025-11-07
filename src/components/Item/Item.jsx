@@ -2,11 +2,11 @@ import './Item.css'
 import { useEffect } from "react";
 import 'spoilerjs/spoiler-span';
 import { formatPrice } from '../../libs/format.price'
-import { Link } from "react-router-dom"
 
-export const Item = ({ id, name, description, price, imageUrl, children }) => {
 
-  return <article key={id}>
+export const Item = ({  name, description, price, imageUrl, children }) => {
+
+  return <article>
     <img src={imageUrl} alt={description} />
     <h1>{name}</h1>
     <div className="price-section">
@@ -24,7 +24,7 @@ export const Item = ({ id, name, description, price, imageUrl, children }) => {
 
     </div>
     <p>Description: {description}</p>
-    <Link to={`/detail/${id}`}>{children}</Link>
+    {children}
   </article>
 
 }

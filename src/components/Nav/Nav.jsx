@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import './Nav.css'
-import { useEffect } from "react";
 import 'spoilerjs/spoiler-span';
 import { useCartContext } from '../../context/CartContex/useCartContext';
 
@@ -17,7 +16,7 @@ export const Nav = () => {
   return (
     <nav>
 
-      <Link to="/">
+      <Link className="link-span-logo" to="/">
         <span className="span-logo">
         Watch Shop
         </span>

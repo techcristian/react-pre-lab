@@ -2,6 +2,7 @@ article {
   width: 100%;
   max-width: 300px;
   background-color: #ffffff;
+  color:#040cf0;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -28,20 +29,20 @@ article img {
 }
 
 article h1 {
-  font-size: 1.2rem;
- color:#2d3731;
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
+  color:#555;
 }
 
 article p {
   font-size: 0.95rem;
-  color: #555;
+  color:#ece9e9;
   margin: 0.25rem 0;
 }
 
 article p:first-of-type {
   font-weight: bold;
-  color: #384246; /* color del precio */
+  color: #909292; /* color del precio */
 }
 article p span{
    color: #052d07; /* color del precio */
@@ -53,7 +54,7 @@ article p span{
 
 /* Precio original tachado */
 .price-old {
-  color: #555;
+  color: #a3a1a1;
   text-decoration: line-through;
   font-size: 1rem;
   margin: 0;
@@ -61,7 +62,7 @@ article p span{
 
 /* Precio en oferta */
 .price-off {
-  color: #b30404;
+  color: #1f1e1e !important;
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0.2rem 0;

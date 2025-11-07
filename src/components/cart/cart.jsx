@@ -26,7 +26,7 @@ export const Cart = () => {
                 <p>Producto: {prod.name}</p>
 
                 <p className="price-old">Precio: {formatPrice(prod.price)}</p>
-                <p className="price-off">
+                <p className="price-off-cart">
                   {isSumergible
                     ? `Oferta -40%: ${formatPrice(discountPrice)}`
                     : `Oferta -10%: ${formatPrice(discountPrice)}`}
