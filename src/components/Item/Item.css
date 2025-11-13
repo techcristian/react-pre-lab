@@ -76,7 +76,7 @@ article p span{
     display: flex;
     justify-content: center;
     padding: 0.8rem;
-    transform: translateX(-70px);
+    transform: translateX(-65px);
   }
 
   article h1 {
