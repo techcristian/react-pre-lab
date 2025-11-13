@@ -1,5 +1,5 @@
 .count-container {
-  max-width: 300px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,11 +113,31 @@
 }
 
 @media (max-width: 480px) {
+ .btn-links {
+  width: 100px;
+ background: rgb(240, 238, 238);
+ display: flex;
+  flex-direction: column; /* Centra los botones horizontalmente */
+  align-items: center;
+  gap: 1rem;                  /* Espacio entre los botones */
+  margin-top: 1.5rem;         /* Separación del contenido superior */
+  flex-wrap: wrap;           /* Por si en móvil no entran, bajan uno debajo del otro */
+  padding: 20px;
+  border-radius: 8px;
+
+}
   .count-container {
     max-width: 180px;
     padding: 0.8rem;
   }
-
+.ir-carrito{
+  width: 150%;
+ transform: translateX(-15px);
+}
+.ir-home{
+  width: 100%;
+   transform: translateX(-15px);
+}
   .btn {
     padding: 0.4rem 0.8rem;
   }

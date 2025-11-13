@@ -8,10 +8,12 @@ article {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
   padding: 1rem ;
-  margin: 1rem 1rem;
+  margin: 1rem 0;
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+   transform: translateX(2px);
 }
 
 article:hover {
@@ -66,25 +68,15 @@ article p span{
   font-size: 1.2rem;
   margin: 0.2rem 0;
 }
-spoiler-span {
-background-image: url("../../../public/images/casio-sumergible.webp");
-  color:white;
-  border-radius: 4px;
-  transition: color 0.3s, background-color 0.3s;
-  cursor: pointer;
-  padding: 0.3rem 0.3rem;
 
-}
-
-spoiler-span:hover {
-  background-color: transparent;
-  color: transparent;
-}
 
 @media (max-width: 480px) {
   article {
-    max-width: 90%;
+    width: 150%;
+    display: flex;
+    justify-content: center;
     padding: 0.8rem;
+    transform: translateX(-20px);
   }
 
   article h1 {

@@ -64,9 +64,7 @@ form[role="search"] button {
 }
 
 /* Responsive */
-@media (max-width: 400px) {
-
-
+@media (max-width: 480px) {
 
 .cart-container {
   width: 20%;

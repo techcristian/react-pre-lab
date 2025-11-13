@@ -6,7 +6,7 @@
   margin-right: 1rem;
   justify-items: center; /* centra las tarjetas dentro de cada celda */
   transform: translateX(10px);
-  padding-left: 10px;
+  padding-left: 2px;
   background: rgb(252, 248, 248);
 }
 
