@@ -1,119 +1,106 @@
 
 nav{
-  width: 95%;
+  width: 100%;
   background-color:rgb(226, 225, 230);
   padding: 1rem 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
   position: sticky;
   top: 0;
   z-index: 100;
   display: flex;
   justify-content:space-between;
-
 }
 
-.span-logo{
-  font-size: 1.5rem;
- color: #575656;
 
-}
-.span-logo:hover{
-  font-size: 1.5rem;
-  color: #080842  !important;
-  
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  margin-right: 15px;
-  flex-wrap: wrap;
-}
-
-nav li {
+.cart-container {
+  width: 20%;
   position: relative;
-  transition: transform 0.2s ease;
 }
 
-nav li:hover {
-  transform: translateY(-3px)
-}
-/*nav a {
-
-}*/
-
-nav ul li {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-nav ul li a {
-  color: #575656;
+.cart-container .nav-link {
+  font-size: 1.8rem;
+  color: #333;
   text-decoration: none;
-
-  transition: color 0.3s;
-    padding:0.3rem 0.5rem;
-  border-radius:8px;
+  margin-left: 50px;
+  transition: transform 0.2s;
 }
 
-nav ul li a:hover {
-  background-color: rgb(255, 255, 255);
-  color: #6f6f72;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+.cart-container .nav-link:hover {
+  transform: scale(1.1);
 }
 
-
-/* Burbuja del carrito */
-nav li span {
+.cart-count {
   position: absolute;
-  top: -8px;
-  right: -12px;
-  background-color: #e63946;
+  top: -6px;
+  right: 40px;
+  background-color: crimson;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  padding: 2px 6px;
   border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  min-width: 18px;
-  text-align: center;
+  padding: 3px 7px;
+  line-height: 1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+/*form buscar*/
+form{
+  
+  height: 0;
+}
+.div-form {
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-18px);
+}
+form[role="search"] input {
+  width: 400px; /* o el tamaño que quieras */
+  border-radius: 8px;
 }
 
-.link-span-logo{
-  text-decoration: none;
-  outline: none;
+form[role="search"] button {
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
 }
-
-
-
-
-
-
-
-
 
 /* Responsive */
 @media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
 
-  nav li {
-    position: static;
-  }
 
-  nav li span {
-    position: static;
-    margin-left: 0.4rem;
-    background-color: #e63946;
-    border-radius: 0.4rem;
-  }
+
+.cart-container {
+  width: 20%;
+  position: relative;
+}
+
+.cart-container .nav-link {
+    position: absolute;
+  top: 6px;
+left: 200px;
+  font-size: 1.8rem;
+  color: #333;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: transform 0.2s;
+}
+
+.cart-container .nav-link:hover {
+  transform: scale(1.1);
+}
+
+.cart-count {
+  position: absolute;
+  top: 1px;
+  right: 50px;
+  background-color: crimson;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 7px;
+  line-height: 1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
 }
 

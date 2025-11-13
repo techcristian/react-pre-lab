@@ -9,7 +9,7 @@ export const Cart = () => {
 
 
  return (
-  <section className="cart-container">
+  <section className="carrito-container">
     <h2>Carrito de compras</h2>
 
     {cart.length ? (

@@ -1,6 +1,5 @@
 import { useCartContext } from "../../context/CartContex/useCartContext"
 import { Count } from "../Count/Count";
-import { Item } from "../Item/Item"
 import { formatPrice } from "../../libs/format.price";
 
 export const ItemDetail = ({ detail }) => {
@@ -18,7 +17,7 @@ export const ItemDetail = ({ detail }) => {
         <h1>{detail.name}</h1>
         <div className="price-section">
           <p className="price-old">Precio: {formatPrice(detail.price)}</p>
-         {detail.name.toLowerCase() === "casio sumergible" ? (
+         {detail.name === "Casio Sumergible" ? (
         <p className="price-off">
           Oferta - 40%: {formatPrice(detail.price * 0.6)}
         </p>
@@ -34,19 +33,7 @@ export const ItemDetail = ({ detail }) => {
 
       <Count onConfirm={handleAdd} />
 
-
-
     </>
   )
 
-
-
-
 }
-/*
-<Item {...detail}>
-   
-        <Count btnText={"Agregar al carrito"} onConfirm={handleAdd}/>
-        
-      
-      </Item>*/ 

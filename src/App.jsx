@@ -1,30 +1,51 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Nav } from './components/Nav/Nav'
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
 
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer"
 import './App.css'
 import { CartProvider } from "./context/CartContex/CartProvider"
-import { Footer } from "./components/Footer/Footer"
+
 import { Cart } from './components/cart/cart'
+import { ProductFormContainer } from "./components/adminComponents/ProductFormContainer/ProductFormContainer"
+
+import { MainLayout } from "./layout/MainLayout";
+import { AdminLayout } from "./layout/AdminLayout";
+import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida"
+
+import { Login } from "./components/Login/Login"
 
 function App() {
 
-
   return (
-    <>
+    < >
       <BrowserRouter>
         <CartProvider>
-          <Nav />
-          <Routes>
-            <Route path={"/"} element={<ItemListContainer />} />
-            <Route path={"/detail/:id"} element={<ItemDetailContainer />} />
 
-            <Route path={"/category/:category"} element={<ItemListContainer />} />
-           
-            <Route path={"/carrito"} element={<Cart />} />
+          <Routes>
+
+            <Route element={<MainLayout />}>
+              {/*Ruta Inicio */}
+              <Route path={"/"} element={<ItemListContainer />} />
+              {/* Ruta detalle */}
+              <Route path={"/detail/:id"} element={<ItemDetailContainer />} />
+              {/* Ruta filtar por categoria */}
+              <Route path={"/category/:category"} element={<ItemListContainer />} />
+              {/* Ruta carrito */}
+              <Route path={"/carrito"} element={<Cart />} />
+            </Route>
+
+            {/* Rura administardor */}
+            <Route path={"/admin"} element={<AdminLayout />} >
+              <Route index element={<Login/>} />
+              <Route path={"alta-productos"} element={
+                <RutaProtegida>
+                  <ProductFormContainer />
+                </RutaProtegida>
+              } />
+            </Route>
+
           </Routes>
-          <Footer />
+
         </CartProvider>
 
 

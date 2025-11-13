@@ -1,42 +1,71 @@
 import { Link } from "react-router-dom"
-import './Nav.css'
+import "./Nav.css"
 import 'spoilerjs/spoiler-span';
 import { useCartContext } from '../../context/CartContex/useCartContext';
 
 export const Nav = () => {
   const { getTotalItems } = useCartContext();
 
-  /*useEffect(() => {
-    // Importa dinámicamente el JS que inicializa los spoilers
-    import('spoilerjs').then(module => {
-      module.initSpoilers(); // 👈 activa el efecto
-    });
-  }, []);*/
-
   return (
-    <nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
 
-      <Link className="link-span-logo" to="/">
-        <span className="span-logo">
-        Watch Shop
-        </span>
-      </Link>
+        <Link to={"/"} class="navbar-brand">Watch Shop</Link>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <Link to={"/"} class="nav-link active" aria-current="page" >  Home</Link>
+            </li>
 
-      <ul>
-        <li><Link to={"/"}>  Home</Link> </li>
-        <li><Link to={"/category/analogico"}>  Analogico</Link> </li>
-        <li><Link to={"/category/deportivo"}>  Deportivo</Link> </li>
-        <li><Link to={"/category/digital"}>  Digital</Link> </li>
-        <li><Link to={"/category/sumergible"}>  Sumergible</Link> </li>
-        <li><Link to={"/carrito"}>  Carrito </Link>
-          {
-            getTotalItems() > 0 && (
-              <span >{getTotalItems()}</span>
-            )
-          }
-        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li ><Link to={"/category/analogico"} class="dropdown-item"  >  Analogico</Link> </li>
+                <li><Link to={"/category/deportivo"} class="dropdown-item">  Deportivo</Link></li>
+                <li><Link to={"/category/digital"} class="dropdown-item">  Digital</Link></li>
+                <li><Link to={"/category/sumergible"} class="dropdown-item">  Sumergible</Link></li>
+              </ul>
+            </li>
 
-      </ul>
+          </ul>
+         <form role="search">
+           <div className="div-form">
+             <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Fijate en Watch Shop"
+              aria-label="Search"
+            />
+            <button class="btn btn-sm btn-outline-success" type="submit">
+              Buscar
+            </button>
+           </div>
+          </form>
+
+          <div className="cart-container">
+            <Link to="/carrito" className="nav-link position-relative">
+              🛒
+              {getTotalItems() > 0 && (
+                <span className="cart-count">{getTotalItems()}</span>
+              )}
+            </Link>
+          </div>
+        </div>
+      </div>
     </nav>
   )
-} 
+}
+
+
+
+/*useEffect(() => {
+   // Importa dinámicamente el JS que inicializa los spoilers
+   import('spoilerjs').then(module => {
+     module.initSpoilers(); // 👈 activa el efecto
+   });
+ }, []);*/

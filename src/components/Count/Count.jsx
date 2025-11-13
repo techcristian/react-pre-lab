@@ -16,10 +16,10 @@ export const Count = ({  onConfirm }) => {
 
   return (
  
-    <div class="count-container">
-      <div class="count-buttons" >
+    <div className="count-container">
+      <div className="count-buttons" >
         <button className="btn" onClick={decrement} disabled={count === 0}>-</button>
-        <p>{count}</p>
+        <p className="count-number">{count}</p>
         <button className="btn" onClick={increment}>+</button>
       </div>
 

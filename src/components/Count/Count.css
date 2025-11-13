@@ -50,6 +50,10 @@
   cursor: not-allowed;
   transform: none;
 }
+.count-number{
+  color: rgb(6, 6, 6);
+  margin-top: 15px;
+}
 .btn-links {
   width: 250px;
  background: rgb(240, 238, 238);
@@ -83,7 +87,7 @@
    background-color: #fffefe;
   color:#0636f5;
   border: 1px solid #0636f5;
-  transform: scale(1.2);
+  transform: scale(1);
 
 }
 
@@ -104,7 +108,7 @@
    background-color: #fdfdfd !important;
   color:#0c0c0c !important;
   border: 1px solid #0c0c0c !important;
-  transform: scale(1.2);
+  transform: scale(1);
 
 }
 

@@ -1,10 +1,13 @@
 .item-list-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-  gap: 3rem; /* espacio entre tarjetas */
-  padding: 1rem 3rem;
-  margin-right: 2rem;
+  gap: 1rem; /* espacio entre tarjetas */
+  padding: 1rem 1rem;
+  margin-right: 1rem;
   justify-items: center; /* centra las tarjetas dentro de cada celda */
+  transform: translateX(10px);
+  padding-left: 10px;
+  background: rgb(252, 248, 248);
 }
 
 /* 🔹 Tablets (1024px o menos) → 2 columnas */

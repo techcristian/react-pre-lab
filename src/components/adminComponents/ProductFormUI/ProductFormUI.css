@@ -1,0 +1,103 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f7f9fb, #e3e9ef);
+  min-height: 100vh;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.input {
+  width: 100%;
+  transform: translateX(-10px);
+}
+input,
+textarea,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+  color:#0056b3;
+  width: 100%;
+  padding: 0.9rem;
+  margin-right: 20px;
+  border-radius: 0.6rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #fafafa;
+ 
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.er {
+  color: #ce0c0c;
+  font-size: 0.9rem;
+  margin: 0.3rem 0 0;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  form {
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 0.95rem;
+  }
+}
