@@ -64,7 +64,7 @@ form[role="search"] button {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
 
 
@@ -74,9 +74,9 @@ form[role="search"] button {
 }
 
 .cart-container .nav-link {
-    position: absolute;
+   position: absolute;
   top: 6px;
-left: 200px;
+  left: 200px;
   font-size: 1.8rem;
   color: #333;
   text-decoration: none;
