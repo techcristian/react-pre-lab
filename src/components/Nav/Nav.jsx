@@ -33,7 +33,7 @@ export const Nav = () => {
             </li>
 
           </ul>
-         <form role="search">
+         <form class="d-flex" role="search">
            <div className="div-form">
              <input
               class="form-control me-2"
