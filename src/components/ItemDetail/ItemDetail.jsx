@@ -1,7 +1,7 @@
 import { useCartContext } from "../../context/CartContex/useCartContext"
 import { Count } from "../Count/Count";
 import { formatPrice } from "../../libs/format.price";
-
+import "./ItemDetail.css"
 export const ItemDetail = ({ detail }) => {
 
   const { addItem } = useCartContext();
@@ -12,7 +12,8 @@ export const ItemDetail = ({ detail }) => {
 
   return (
     <>
-      <article key={detail.id}>
+    <div className="wrapper-detail">
+        <article key={detail.id} className="article-detal">
         <img src={detail.imageUrl} alt={detail.description} />
         <h1>{detail.name}</h1>
         <div className="price-section">
@@ -32,6 +33,7 @@ export const ItemDetail = ({ detail }) => {
       </article>
 
       <Count onConfirm={handleAdd} />
+    </div>
 
     </>
   )

@@ -11,7 +11,40 @@ nav{
   justify-content:space-between;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
 
+nav li {
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+nav li:hover {
+  transform: translateY(-3px);
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #efeeee;
+  color: #00b4d8;
+}
 .cart-container {
   width: 20%;
   position: relative;
@@ -29,10 +62,11 @@ nav{
   transform: scale(1.1);
 }
 
+
 .cart-count {
   position: absolute;
-  top: -6px;
-  right: 40px;
+  top: -3px;
+  right: 58px;
   background-color: crimson;
   color: white;
   font-size: 0.8rem;
@@ -47,24 +81,58 @@ form{
   
   height: 0;
 }
+/* Contenedor del formulario */
 .div-form {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* espacio entre input y botón */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   transform: translateY(-18px);
-}
-form[role="search"] input {
-  width: 400px; /* o el tamaño que quieras */
-  border-radius: 8px;
+
 }
 
-form[role="search"] button {
-  padding: 4px 10px;
+/* Input principal */
+.btm-form-input {
+  flex: 1; /* ocupa todo el espacio disponible */
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #626363;
+  border-radius: 20px;
   font-size: 0.9rem;
-  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: rgb(146, 144, 144);
+    background-color: white;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
+/* Efecto al enfocar el input */
+.btm-form-input:focus {
+  outline: none;
+  border:1px solid rgb(180, 178, 178);
+
+}
+
+/* Botón */
+.btn.btn-sm.btn-outline-primary {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  padding-bottom: 10px;
+  transition: all 0.3s ease;
+  background-color: rgb(217, 215, 215);
+  color:#333;
+}
+
+/* Hover del botón */
+.btn.btn-sm.btn-outline-primary:hover {
+  background-color: #ffffff;
+  color: rgb(105, 102, 102);
+  border: 0.5px solid rgb(48, 47, 47);
+}
+
+/*max 900*/
+@media (max-width: 900px) {
 
 .cart-container {
   width: 20%;
@@ -74,7 +142,52 @@ form[role="search"] button {
 .cart-container .nav-link {
    position: absolute;
   top: 6px;
-  left: 200px;
+  left: 0px;
+  font-size: 1.8rem;
+  color: #333;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: transform 0.2s;
+}
+
+.cart-container .nav-link:hover {
+  transform: scale(1.1);
+}
+span {
+  position:absolute;
+  top:-15px
+}
+.cart-count {
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  background-color: crimson;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 7px;
+  line-height: 1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+nav{
+  width: 100%;
+}
+.cart-container {
+
+position:relative;
+
+}
+
+.cart-container .nav-link {
+ position: absolute;
+  top: 6px;
+  left: 100px;
   font-size: 1.8rem;
   color: #333;
   text-decoration: none;
@@ -86,9 +199,10 @@ form[role="search"] button {
   transform: scale(1.1);
 }
 
+
 .cart-count {
   position: absolute;
-  top: 1px;
+  top: 5px;
   right: 50px;
   background-color: crimson;
   color: white;

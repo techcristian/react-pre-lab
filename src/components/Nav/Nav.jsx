@@ -36,12 +36,12 @@ export const Nav = () => {
          <form class="d-flex" role="search">
            <div className="div-form">
              <input
-              class="form-control me-2"
+              className="btm-form-input"
               type="search"
               placeholder="Fijate en Watch Shop"
               aria-label="Search"
             />
-            <button class="btn btn-sm btn-outline-success" type="submit">
+            <button class="btn btn-sm btn-outline-primary" type="submit">
               Buscar
             </button>
            </div>
@@ -49,7 +49,8 @@ export const Nav = () => {
 
           <div className="cart-container">
             <Link to="/carrito" className="nav-link position-relative">
-              🛒
+              <span className="fs-6 text-secondary me-1"
+              >carrito</span> 🛒
               {getTotalItems() > 0 && (
                 <span className="cart-count">{getTotalItems()}</span>
               )}

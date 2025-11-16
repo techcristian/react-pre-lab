@@ -1,22 +1,23 @@
 .count-container {
   width: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   background-color:rgb(243, 241, 241);
- color: #0c0c17;
- font-size: 1.2rem; font-weight: bold;
+  color: #0c0c17;
+  font-size: 1.2rem; font-weight: bold;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 1rem auto;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.1s ease;
+  margin-top: 100px;
 }
 
 .count-container:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgb(123, 121, 121);
+ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   background: rgb(240, 238, 238);
 }
 
@@ -58,18 +59,18 @@
   width: 250px;
  background: rgb(240, 238, 238);
  display: flex;
-  justify-content:space-around;   /* Centra los botones horizontalmente */
+  justify-content:space-around;   
   align-items: center;
-  gap: 1.2rem;                  /* Espacio entre los botones */
-  margin-top: 1.5rem;         /* Separación del contenido superior */
-  flex-wrap: wrap;           /* Por si en móvil no entran, bajan uno debajo del otro */
+  gap: 1.2rem;                
+  margin-top: 1.5rem;       
+  flex-wrap: wrap;          
   padding: 20px;
   border-radius: 8px;
-
 }
 .btn-links:hover{
-  background-color: #c3c1c1;
+  background-color: #eeecec;
 }
+
 .ir-carrito{
   width: 150%;
   background-color: #0636f5;
@@ -77,17 +78,17 @@
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.6rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
   cursor: pointer;
   margin-left: -15px;
-  transition: background-color 0.25s ease, transform 0.2s ease;
+  transition: background-color 0.25s ease, transform 0.9s ease;
 }
 
 .ir-carrito:hover{
    background-color: #fffefe;
   color:#0636f5;
   border: 1px solid #0636f5;
-  transform: scale(1);
+  transform: scale(1.1);
 
 }
 
@@ -98,9 +99,9 @@
   border: none;
   padding: 0.5rem 1.5rem;
   border-radius: 0.6rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
   cursor: pointer;
-  transition: background-color 0.25s ease, transform 0.2s ease;
+  transition: background-color 0.25s ease, transform 0.9s ease;
 
 }
 
@@ -108,7 +109,7 @@
    background-color: #fdfdfd !important;
   color:#0c0c0c !important;
   border: 1px solid #0c0c0c !important;
-  transform: scale(1);
+  transform: scale(1.1);
 
 }
 

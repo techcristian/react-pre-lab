@@ -9,7 +9,7 @@
  background:#aeadad;
   color: #fdfdfd;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s ease ,transform 0.9s ease;
 }
 .btn-item:hover {
   background:white !important;

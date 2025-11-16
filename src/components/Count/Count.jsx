@@ -26,7 +26,7 @@ export const Count = ({  onConfirm }) => {
       <button className="btn" onClick={confirm} disabled={count === 0}>{"Agregar al carrito"}</button>
 
      <div className="btn-links">
-       <Link to={"/carrito"}><button className="ir-carrito" >{"Carrito"}</button></Link>
+       <Link to={"/carrito"}><button className="ir-carrito" >{"Ir carrito"}</button></Link>
        <Link to={"/"}><button className="ir-home" >{"Volver"}</button></Link>
      </div>
    

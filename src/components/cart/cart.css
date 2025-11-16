@@ -1,11 +1,10 @@
 .carrito-container {
-  width: 500px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #ffffff;
+  margin: 0.5rem 0rem;
+  padding: 2rem 5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +35,7 @@
 }
 
 .cart-item:hover {
-    background-color:#141414;
+    background-color:#1c1b1b;
     color: white !important;
   transform: translateY(-3px);
 }

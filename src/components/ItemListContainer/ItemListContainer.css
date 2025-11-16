@@ -19,10 +19,12 @@
   }
 }
 
-/* 🔹 Móviles (600px o menos) → 1 columna */
-@media (max-width: 600px) {
+/* 🔹 Móviles (480px o menos) → 1 columna */
+@media (max-width: 480px) {
   .item-list-container {
     grid-template-columns: 1fr;
     padding: 1rem;
+  
+     
   }
 }

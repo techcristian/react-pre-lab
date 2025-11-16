@@ -13,11 +13,11 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-   transform: translateX(2px);
+   transition: transform 0.7s ease-in-out;
 }
 
 article:hover {
-  transform: translateY(-5px);
+  transform: translateY(-12px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -76,7 +76,8 @@ article p span{
     display: flex;
     justify-content: center;
     padding: 0.8rem;
-    transform: translateX(-65px);
+    transform: translateX(3px);
+    margin-right: 1rem;
   }
 
   article h1 {
