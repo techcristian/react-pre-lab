@@ -183,6 +183,11 @@ nav{
 position:relative;
 
 }
+.navbar-toggler{
+  margin: 3px;
+ background-color: #007bff; /* azul bootstrap */
+
+} 
 
 .cart-container .nav-link {
  position: absolute;
