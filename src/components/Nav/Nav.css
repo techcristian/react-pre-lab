@@ -180,11 +180,6 @@ nav{
 .cart-container {
 position:relative;
 }
-.navbar-toggler{
-  margin: 3px;
- background-color: #007bff; /* azul bootstrap */
-
-} 
 
 .cart-container .nav-link {
  position: absolute;
@@ -200,8 +195,20 @@ position:relative;
 .cart-container .nav-link:hover {
   transform: scale(1.1);
 }
+/*boton hamburguesa*/
+.navbar-toggler{
+ margin: 3px;
+ background-color: #007bff; /* azul bootstrap */
+ width: 60px;
+ height: 50px;
+} 
 
+.navbar-toggler-icon{
+  font-size: 20px;
+  margin:2px ;
+}
 
+/*numero del carrito*/
 .cart-count {
   position: absolute;
   top: 5px;

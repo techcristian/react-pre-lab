@@ -12,9 +12,11 @@ export const Nav = () => {
       <div class="container-fluid">
 
         <Link to={"/"} class="navbar-brand">Watch Shop</Link>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div className="hamburguesa">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <p class="navbar-toggler-icon"></p>
         </button>
+      </div>
        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
