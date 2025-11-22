@@ -1,5 +1,5 @@
 .wrapper-detail{
   display: flex;
-  justify-content: space-around;
-  gap:2rem;
+ flex-direction: column;
+  gap:0rem;
 }

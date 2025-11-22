@@ -78,8 +78,8 @@ nav a:hover {
 }
 /*form buscar*/
 form{
-  
   height: 0;
+ background-color:rgb(249, 250, 251);
 }
 /* Contenedor del formulario */
 .div-form {
@@ -91,7 +91,7 @@ form{
   max-width: 400px;
   margin: 0 auto;
   transform: translateY(-18px);
-
+  
 }
 
 /* Input principal */
@@ -103,7 +103,7 @@ form{
   font-size: 0.9rem;
   transition: all 0.3s ease;
   color: rgb(146, 144, 144);
-    background-color: white;
+    background-color: rgb(249, 249, 249);
 }
 
 /* Efecto al enfocar el input */
@@ -120,7 +120,7 @@ form{
   font-size: 0.85rem;
   padding-bottom: 10px;
   transition: all 0.3s ease;
-  background-color: rgb(217, 215, 215);
+  background-color: rgb(193, 186, 186);
   color:#333;
 }
 
