@@ -16,6 +16,7 @@
     grid-template-columns: repeat(2, 1fr);
      gap: 1.5rem; /* espacio entre tarjetas */
     padding: 1.5rem;
+
   }
 }
 
@@ -24,7 +25,8 @@
   .item-list-container {
     grid-template-columns: 1fr;
     padding: 1rem;
-  
+    justify-items: center; /* centra las tarjetas dentro de cada celda */
+    margin-left: -15px;
      
   }
 }
