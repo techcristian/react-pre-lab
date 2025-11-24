@@ -23,6 +23,7 @@
 /* 🔹 Móviles (480px o menos) → 1 columna */
 @media (max-width: 480px) {
   .item-list-container {
+
     grid-template-columns: 1fr;
     padding: 1rem;
     justify-items: center; /* centra las tarjetas dentro de cada celda */

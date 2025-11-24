@@ -1,5 +1,5 @@
 .item-detail-container {
- max-width: 900px;
+ width: 300px;
   transform: translateX(10px);
   padding-left: 15px;
   background: rgb(252, 248, 248);

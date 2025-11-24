@@ -44,10 +44,11 @@ export const Nav = () => {
               type="search"
               placeholder="Fijate en Watch Shop"
               aria-label="Search"
-            />
+            /> 
             <button class="btn btn-sm btn-outline-primary" type="submit">
               Buscar
             </button>
+          
            </div>
           </form>
 

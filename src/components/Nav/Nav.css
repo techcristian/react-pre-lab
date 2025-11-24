@@ -98,7 +98,7 @@ form{
   flex: 1; /* ocupa todo el espacio disponible */
   padding: 0.5rem 0.75rem;
   border: 1px solid #626363;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   color: rgb(146, 144, 144);
@@ -115,7 +115,7 @@ form{
 /* Botón */
 .btn.btn-sm.btn-outline-primary {
   padding: 0.4rem 0.8rem;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 0.85rem;
   padding-bottom: 10px;
   transition: all 0.3s ease;

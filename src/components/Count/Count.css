@@ -113,11 +113,12 @@
 
 }
 
-@media (max-width: 400px) {
-.count-container {
-  width: 900px;
+@media (max-width: 480px) {
+    .count-container {
+    width: 300px;
+    padding: 0.8rem;
+  }
 
-}
  .btn-links {
   width: 100px;
   background: rgb(240, 238, 238);
@@ -131,10 +132,7 @@
   border-radius: 8px;
 
 }
-  .count-container {
-    max-width: 180px;
-    padding: 0.8rem;
-  }
+
 .ir-carrito{
   width: 150%;
  transform: translateX(-15px);
