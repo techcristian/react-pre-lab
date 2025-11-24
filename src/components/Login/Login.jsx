@@ -33,7 +33,7 @@ export const Login = () => {
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Iniciar sesión</h2>
 
-        <div className="input">
+        <div className="input-login">
           <input
             type="text"
             name="name"

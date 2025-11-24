@@ -10,7 +10,7 @@ export const ProductFormUI = ({
 }) => {
   return (
     <section>
-      <form onSubmit={onSubmit}>
+      <form className="form-images" onSubmit={onSubmit}>
         <h2>Agregar Producto</h2>
         <div className="input">
           <input

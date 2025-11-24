@@ -10,14 +10,16 @@
 
 .login-form {
   background-color: #ffffff;
-  padding: 2.5rem;
+  padding: 2rem;
+  padding-bottom: 400px;
   border-radius: 1rem;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
   width: 100%;
-  max-width: 380px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
   transition: all 0.3s ease;
-   
 }
 
 .login-form:hover {
@@ -32,11 +34,12 @@
   letter-spacing: 0.5px;
 }
 
-.input {
+.input-login {
   width: 100%;
   transform: translateX(-10px);
+ 
 }
-.login-form input {
+.login-form input{
   width: 100%;
   padding: 0.9rem;
   margin-bottom: 1rem;
