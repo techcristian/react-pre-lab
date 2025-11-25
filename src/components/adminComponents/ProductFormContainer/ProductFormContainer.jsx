@@ -17,7 +17,9 @@ export const ProductFormContainer = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setProduct({ ...product, [name]: value });
+    const n = name.toLowerCase();
+    const v = value.toLowerCase()
+    setProduct({ ...product, [n]: v });
   }
   const handleSubmit = async (e) => {
     e.preventDefault();

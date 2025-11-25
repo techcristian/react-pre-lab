@@ -13,6 +13,7 @@ import { AdminLayout } from "./layout/AdminLayout";
 import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida"
 
 import { Login } from "./components/Login/Login"
+import { SearchResults } from "./components/Search/Search"
 
 function App() {
 
@@ -32,6 +33,8 @@ function App() {
               <Route path={"/category/:category"} element={<ItemListContainer />} />
               {/* Ruta carrito */}
               <Route path={"/carrito"} element={<Cart />} />
+              {/* 👉 Ruta para resultados de búsqueda */}
+              <Route path={"/search"} element={<SearchResults />} />
             </Route>
 
             {/* Rura administardor */}

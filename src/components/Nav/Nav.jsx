@@ -2,9 +2,22 @@ import { Link } from "react-router-dom"
 import "./Nav.css"
 import 'spoilerjs/spoiler-span';
 import { useCartContext } from '../../context/CartContex/useCartContext';
-
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Nav = () => {
+   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (query.trim() === "") return;
+
+   navigate(`/search?query=${query}`);
+   setQuery("");
+;
+  };
   const { getTotalItems } = useCartContext();
 
   return (
@@ -37,13 +50,15 @@ export const Nav = () => {
             </li>
 
           </ul>
-         <form class="d-flex" role="search">
+         <form class="d-flex" role="search" onSubmit={handleSubmit}>
            <div className="div-form">
              <input
               className="btm-form-input"
               type="search"
               placeholder="Fijate en Watch Shop"
               aria-label="Search"
+           value={query}
+          onChange={(e) => setQuery(e.target.value)}
             /> 
             <button class="btn btn-sm btn-outline-primary" type="submit">
               Buscar
