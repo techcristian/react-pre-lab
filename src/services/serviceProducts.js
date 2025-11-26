@@ -47,7 +47,7 @@ export const getProductsBySearch = async (keyboard) => {
 
   const data = await res.json();
 
-  const k = String(keyboard).toLowerCase(); // 🔥 IMPORTANTE
+  const k = String(keyboard).toLowerCase(); // IMPORTANTE
 
   const filtered = data.filter((item) =>
     item.name.toLowerCase().includes(k) ||

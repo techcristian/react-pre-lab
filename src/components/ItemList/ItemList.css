@@ -6,7 +6,7 @@
   font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
- background:#aeadad;
+  background:#aeadad;
   color: #fdfdfd;
   cursor: pointer;
   transition: border-color 0.25s ease ,transform 0.9s ease;
