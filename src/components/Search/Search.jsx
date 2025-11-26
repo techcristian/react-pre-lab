@@ -40,8 +40,3 @@ return(
 )
 }
 
-{/*<div key={p.id} className="product-card">
-              <img src={p.imageUrl} alt={p.name} />
-              <h3>{p.name}</h3>
-              <p>{p.description}</p>
-            </div>*/}
