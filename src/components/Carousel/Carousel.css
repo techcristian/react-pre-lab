@@ -1,0 +1,28 @@
+.mySwiper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+/*📱 Vista móvil */
+@media (max-width: 480px){
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-wrapper .mySwiper {
+  object-fit: cover;
+  margin: 0 auto;
+  max-width: 250px;
+  max-height: 150px;
+}
+.mySwiper img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+
+}}

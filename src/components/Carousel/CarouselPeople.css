@@ -1,0 +1,77 @@
+.people{
+background-image: url(../../assets/images/paisaje1.jpg);
+  background-size: cover;    /* Ajusta la imagen al contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite */
+  width: 100%;
+  height: 500px; /* Ajustá la altura que quieras 250*/
+}
+/*.mySwiper-people img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}*/
+/*animacion*/
+.carousel-people-wrapper {
+  position: relative;
+  width: 100%;
+  height: 480px; /* 👈 Asegura que haya espacio para el fondo */
+  overflow: hidden;
+}
+
+/* Fondo detrás del carrusel */
+.carousel-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  filter: brightness(0.85);
+}
+
+/* Carrusel encima */
+.mySwiper-people {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Personas */
+.person-img {
+  width: auto;
+  height: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* 📱 Vista móvil */
+@media (max-width: 480px) {
+
+  .carousel-wrapper-people {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mySwiper-people {
+    width: 100%;
+    max-width: 280px;   /* 🟢 Tamaño ideal para móvil */
+  }
+
+  .mySwiper-people img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   /* 🟢 No recorta la persona */
+    padding: 0;            /* 🟢 Quitamos padding que la hacía gigante */
+    margin: 0 auto;
+    display: block;
+  }
+}
