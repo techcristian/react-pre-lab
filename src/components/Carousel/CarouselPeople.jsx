@@ -226,7 +226,7 @@ export const CarouselPeople = () => {
   animate={{ opacity: 1, scale: 1 }}
   exit={{ opacity: 0, scale: 1.1 }}
   transition={{
-    duration: 0.8,   // Más lento
+    duration: 0.1,   // Más lento
     ease: "easeInOut"
   }}
       />
