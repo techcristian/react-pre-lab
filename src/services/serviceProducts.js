@@ -1,4 +1,4 @@
-const BASE_URL = "https://690e6fb1bd0fefc30a047615.mockapi.io/products";
+const BASE_URL =import.meta.env.VITE_URL_KEY;
 // create product
 export const createProduct = async (product) => {
   const res = await fetch(BASE_URL, {
