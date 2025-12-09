@@ -12,10 +12,8 @@ export const AuthProvider = ({children}) => {
   })
 
 const login = (name,password) => {
-  const name_key = import.meta.env.VITE_ADMIN_KEY
-  const password_key = import.meta.env.VITE_PASSWORD_KEY
 
-  if(name === name_key  && password === password_key  ){
+  if(name === "admin"  && password === "1234"  ){
     const session = {name};
     setUser(session);
     sessionStorage.setItem("session", JSON.stringify(session));

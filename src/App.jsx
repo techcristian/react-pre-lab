@@ -37,7 +37,7 @@ function App() {
               <Route path={"/search"} element={<SearchResults />} />
             </Route>
 
-            {/* Rura administardor */}
+            {/* Ruta administardor */}
             <Route path={"/admin"} element={<AdminLayout />} >
               <Route index element={<Login/>} />
               <Route path={"alta-productos"} element={
